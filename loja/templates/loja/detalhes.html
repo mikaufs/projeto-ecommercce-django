@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>{{produtos.nome}} - Tralhas Antiquário</title>
+{% endblock %}
+
+{% block nav %}
+<li>
+  <a href="/">
+    PÁGINA INICIAL
+  </a>
+</li>
+<li>
+  OBJETOS
+</li>
+<li>
+  MÓVEIS
+</li>
+<li>
+  ARTE
+</li>
+<li>
+  FRAGMENTOS
+</li>
+<li>
+  ILUMINAÇÃO
+</li>
+{% endblock %}
+
+{% block center %}
+
+<div class="flex-area-detalhe">
+  <div class="area-detalhe">
+    <div class="imagem">
+      <img class="produto-imagem" src="{{ produtos.imagem.url }}" alt="logo">
+    </div>
+    <div class="info">
+      <h1 class="info-nome">{{produtos.nome}}</h1>
+      <h2 class="info-preco">R${{produtos.preco}}</h2>
+      <h2 class="info-desc">{{produtos.descricao}}</h2>
+
+      <button class="btn-comprar">Comprar</button>
+    </div>
+  </div>
+</div>
+{% endblock %}

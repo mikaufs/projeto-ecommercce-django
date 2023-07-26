@@ -1,0 +1,51 @@
+{% extends 'base2.html' %}
+
+
+{% block title %}
+<title>Tralhas - Banco de Produtos</title>
+{% endblock %}
+
+{% block nav %}
+<div class="nav-botao-admin">
+  <a href="/"><button>
+      Voltar
+    </button></a>
+</div>
+</div>
+{% endblock %}
+
+{% block center %}
+
+<div class="area-produtos">
+
+  <table class="produto-lista">
+    <tr class="lista-titulo">
+      <th>Produto</th>
+      <th>Preço</th>
+      <th>Descrição</th>
+      <th>Categoria</th>
+    </tr>
+    {% for produto in produtos %}
+    <tr class="linha">
+      <td>{{produto.nome}}</td>
+      <td>R${{produto.preco}}</td>
+      <td>{{produto.descricao}}</td>
+      <td>{{produto.categoria}}</td>
+      <td><a href="{% url 'produtos_editar' id=produto.id %}"><button class="botao-editar">Editar</button></a></td>
+      <td><a href="{% url 'produtos_remover' id=produto.id %}"><button class="botao-excluir">Excluir</button></a></td>
+    </tr>
+    {% endfor %}
+
+    <tr class="lista-footer">
+      <th></th>
+      <th></th>
+      <th><a href="{% url 'produtos_criar' %}"><button class="botao-adicionar">Cadastrar Produto</button></a></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
+
+</div>
+
+{% endblock %}

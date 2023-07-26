@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {% block title %}
+  <title></title>
+  {% endblock %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<nav>
+  <div class="nav-content">
+    <img src="{% static 'img/logo_nav.svg' %}" alt="">
+
+    <div class="nav-botao-admin">
+      <a href="/produtos"><button><img src="{% static 'img/icon_cfg.svg' %}" alt="">
+          Dashboard
+        </button></a>
+    </div>
+  </div>
+
+  <div class="nav-bar">
+    <ul>
+      {% block nav %}
+
+      {% endblock %}
+    </ul>
+  </div>
+
+</nav>
+
+<body>
+  <div class="main">
+  {% block center %}
+
+  {% endblock %}
+  </div>
+</body>
+
+<footer>
+  <h3>Trabalho Final - 2023</h3>
+</footer>
+
+</html>

@@ -1,0 +1,249 @@
+*{
+    font-family: 'Franklin Gothic Medium';
+    background-color: black;
+    color: white;
+}
+
+nav{
+    margin: 50px;
+}
+
+nav .nav-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav .nav-content img {
+    width: 250px;
+}
+
+nav .nav-content .nav-botao-admin a{
+    text-decoration: none;
+}
+
+nav .nav-content .nav-botao-admin a button {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+    color: black;
+    border-radius: 25px;
+    background-color: white;
+    border-style: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav .nav-content .nav-botao-admin a img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+nav .nav-bar ul{
+    display: flex;
+    justify-content:space-around;
+}
+
+nav .nav-bar li{
+    display: inline-block;
+}
+
+nav .nav-bar li{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 35px;
+}
+
+.area-produtos{
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.area-produtos a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.area-produtos .produto-flex{
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 5px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.area-produtos a .produto-flex img{
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.area-produtos a .produto-flex .produto-nome{
+    font-size: 20px;
+}
+
+.area-produtos a .produto-flex .produto-preco{
+    margin-top: -10px;
+    font-size: 15px;
+}
+
+.area-produtos .produto-lista{
+    text-align: center;
+}
+
+.area-produtos .produto-lista .linha td:hover{
+    background-color: rgb(63, 63, 63);
+}
+
+.area-produtos .produto-lista .lista-titulo th{
+    color: black;
+    padding: 10px;
+    background-color: white;
+}
+
+.area-produtos .produto-lista .lista-footer th{
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.area-produtos .produto-lista .botao-editar,.botao-excluir{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: -1px;
+    border-style: none;
+}
+
+.area-produtos .produto-lista .botao-adicionar{
+    margin-top: 10px;
+    background-color: rgb(132, 228, 140);
+    padding: 10px;
+    border-style: none;
+    color: black;
+}
+
+.area-produtos .produto-lista .botao-editar{
+    background-color: rgb(147, 179, 248);
+    color: black;
+}
+
+.area-produtos .produto-lista .botao-excluir:hover{
+    background-color: rgb(248, 136, 145);
+    color: black;
+}
+
+.area-produtos form .mb-3 h3{
+    text-align: left;
+    margin-bottom: -1px;
+}
+
+.area-produtos form .mb-3 input,select{
+    background-color: white;
+    color: black;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    height: 25px;
+}
+
+.area-produtos form button{
+    background-color: white;
+    color: black;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 25px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.area-produtos .form .mb3-desc textarea{
+    font-size: 15px;
+    color: black;
+    background-color: white;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer h3{
+    font-size: 15px;
+}
+nav .nav-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+nav .nav-content img {
+    width: 250px;
+}
+
+nav .nav-content .nav-botao-admin a{
+    text-decoration: none;
+}
+
+nav .nav-content .nav-botao-admin a button {
+    display: flex;
+    align-items: center;
+    margin-top: -15px;
+    color: white;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+    border-style: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav .nav-content .nav-botao-admin a img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+nav .nav-bar ul{
+    display: flex;
+    justify-content:space-around;
+}
+
+nav .nav-bar li{
+    display: inline-block;
+}
+
+nav .nav-bar li{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 35px;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer h3{
+    font-size: 15px;
+}

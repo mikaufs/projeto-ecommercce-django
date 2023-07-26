@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Tralhas Antiquário - Página Inicial</title>
+{% endblock %}
+
+{% block nav %}
+<li>
+  <a href="/">
+    PÁGINA INICIAL
+  </a>
+</li>
+<li>
+  OBJETOS
+</li>
+<li>
+  MÓVEIS
+</li>
+<li>
+  ARTE
+</li>
+<li>
+  FRAGMENTOS
+</li>
+<li>
+  ILUMINAÇÃO
+</li>
+{% endblock %}
+
+{% block center %}
+<div class="area-produtos">
+
+  {% for produto in produtos %}
+
+  <a href="{% url 'detalhar_produto' id=produto.id%}">
+    <div class="produto-flex">
+      <img class="produto-imagem" src="media/{{produto.imagem}}" alt="logo">
+      <h2 class="produto-nome">{{produto.nome}}</h2>
+      <h3 class="produto-preco">R${{produto.preco}}</h3>
+    </div>
+  </a>
+
+  {% endfor %}
+</div>
+
+{% endblock %}

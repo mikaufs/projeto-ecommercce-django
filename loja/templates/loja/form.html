@@ -1,0 +1,52 @@
+{% extends 'base2.html' %}
+
+{% block title %}
+<title>Cadastrar Produto</title>
+{% endblock %}
+
+{% block nav %}
+<div class="nav-botao-admin">
+    <a href="/produtos"><button>
+        Voltar
+      </button></a>
+  </div>
+  </div>
+{% endblock %}
+
+{% block center %}
+
+<div class="area-produtos">
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <h3>Nome</h3>
+            {{ form.nome }}
+        </div>
+        <div class="mb-3">
+            <h3>Preço</h3>
+            {{ form.preco }}
+        </div>
+        <div class="mb-3-desc">
+            <h3>Descrição</h3>
+            <textarea name="descricao" cols="33" rows="10" required="" id="{{ form.descricao }}</textarea>
+            
+        </div>
+        <div class="mb-3">
+            <h3>Categoria</h3>
+            {{ form.categoria }}
+        </div>
+        <div class="mb-3-img">
+            <h3>Imagem</h3>
+            {{ form.imagem }}
+            
+        </div>
+        
+
+        <button type="submit" class="btn-primary">Enviar</button>
+    </form> 
+
+</div>
+
+{% endblock %}
